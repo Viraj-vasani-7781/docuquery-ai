@@ -1,4 +1,4 @@
-package com.docuquery.backend.security;
+package com.docuquery.backend.service;
 
-public class AiService {
+public interface AiService {
 }

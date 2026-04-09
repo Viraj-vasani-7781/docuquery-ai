@@ -1,4 +1,4 @@
-package com.docuquery.backend.security;
+package com.docuquery.backend.service;
 
-public class PdfExtractorService {
+public interface PdfExtractorService {
 }
