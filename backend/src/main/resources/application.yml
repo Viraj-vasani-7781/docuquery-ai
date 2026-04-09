@@ -24,16 +24,18 @@ spring:
     enabled: true
     locations: classpath:db/migration
 
+servlet:
+  multipart:
+    max-file-size: 10MB
+    max-request-size: 10MB
+
 jwt:
   secret: your-256-bit-secret-key-here-make-it-long
   expiration: 86400000 # 24 hours
 
-aws:
-  access-key: your_aws_access_key
-  secret-key: your_aws_secret_key
-  region: ap-south-1
-  bucket-name: docuquery-documents
+file:
+  upload-dir: uploads/documents
 
-anthropic:
-  api-key: your_claude_api_key
-  model: claude-sonnet-4-20250514
+gemini:
+  api-key: AIzaSyC2Jmp8ArfJ8Lq8KTEw7g5qIeK6R-22PNY
+  api-url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
